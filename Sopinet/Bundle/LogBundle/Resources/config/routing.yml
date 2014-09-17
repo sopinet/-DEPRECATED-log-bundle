@@ -1,0 +1,3 @@
+sopinet_log_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: SopinetLogBundle:Default:index }
