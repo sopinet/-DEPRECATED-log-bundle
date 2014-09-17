@@ -2,7 +2,7 @@
     "name": "sopinet/log-bundle",
     "version": "0.0.1",
     "description": "Symfony2 Log Bundle",
-    "keywords": ["symfony, ""log", "symfony2", "bundle"],
+    "keywords": ["symfony", "log", "symfony2", "bundle"],
     "type": "symfony-bundle",
     "license": "GPL2",
     "minimum-stability" : "dev",
