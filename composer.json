@@ -1,0 +1,23 @@
+{
+    "name": "sopinet/log-bundle",
+    "version": "0.0.1",
+    "description": "Symfony2 Log Bundle",
+    "keywords": ["symfony, ""log", "symfony2", "bundle"],
+    "type": "symfony-bundle",
+    "license": "GPL2",
+    "minimum-stability" : "dev",
+    "authors": [
+        {
+            "name": "Juan Martos",
+            "email": "jmartos@sopinet.com",
+            "homepage": "http://sopinet.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "psr-0": { "Sopinet\\Bundle\\LogBundle": "" }
+    },
+    "target-dir": "Sopinet/Bundle/LogBundle"
+}
