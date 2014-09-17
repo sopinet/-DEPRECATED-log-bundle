@@ -1,4 +1,4 @@
 services:
-#    sopinet_log.example:
-#        class: Sopinet\Bundle\LogBundle\Example
-#        arguments: [@service_id, "plain_value", %parameter%]
+    log_manager:
+        class:     Sopinet\Bundle\LogBundle\Services\LogManager
+        arguments: ['@service_container']

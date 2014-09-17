@@ -1,3 +1,11 @@
-sopinet_log_homepage:
-    path:     /hello/{name}
-    defaults: { _controller: SopinetLogBundle:Default:index }
+sopinet_log_error:
+    path:     /logs/error
+    defaults: { _controller: SopinetLogBundle:Log:logError }
+
+sopinet_log_info:
+    path:     /logs/info
+    defaults: { _controller: SopinetLogBundle:Log:logInfo }
+
+sopinet_log_debug:
+    path:     /logs/debug
+    defaults: { _controller: SopinetLogBundle:Log:logDebug }
