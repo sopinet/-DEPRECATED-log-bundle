@@ -2,6 +2,7 @@
 
 namespace Sopinet\Bundle\LogBundle\Entities;
 use Sopinet\Bundle\LogBundle\Entities\Datetime;
+use Sopinet\Bundle\LogBundle\Entities\Context;
 
 class Message
 {
@@ -9,12 +10,14 @@ class Message
 	private $level;
 	private $levelName;
 	private $datetime;
+	private $context;
 	
 	public function __Message(){
 		$message = "";
 		$level = "";
 		$levelName = "";
 		$this->datetime = new Datetime();
+		$this->context = new Context();
 	}
 	
 	/** Getters **/
@@ -34,6 +37,10 @@ class Message
 		return $this->datetime;
 	}
 	
+	public function getContext(){
+		return $this->context;
+	}
+	
 	/** Setters **/
 	public function setMessage($message){
 		$this->message = $message;
@@ -49,5 +56,9 @@ class Message
 
 	public function setDatetime($datetime){
 		$this->datetime = new Datetime($datetime);
+	}
+	
+	public function setContext($context){
+		$this->context = new Context($context);
 	}
 }

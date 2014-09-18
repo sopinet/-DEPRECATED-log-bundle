@@ -1,11 +1,35 @@
-sopinet_log_error:
-    path:     /logs/error
-    defaults: { _controller: SopinetLogBundle:Log:logError }
+sopinet_log_debug:
+    path:     /logs/debug
+    defaults: { _controller: SopinetLogBundle:Log:logDebug }
 
 sopinet_log_info:
     path:     /logs/info
     defaults: { _controller: SopinetLogBundle:Log:logInfo }
 
-sopinet_log_debug:
-    path:     /logs/debug
-    defaults: { _controller: SopinetLogBundle:Log:logDebug }
+sopinet_log_notice:
+    path:     /logs/notice
+    defaults: { _controller: SopinetLogBundle:Log:logNotice }
+    
+sopinet_log_warning:
+    path:     /logs/warning
+    defaults: { _controller: SopinetLogBundle:Log:logWarning }
+
+sopinet_log_error:
+    path:     /logs/error
+    defaults: { _controller: SopinetLogBundle:Log:logError }
+    
+sopinet_log_critical:
+    path:     /logs/critical
+    defaults: { _controller: SopinetLogBundle:Log:logCritical }
+    
+sopinet_log_alert:
+    path:     /logs/alert
+    defaults: { _controller: SopinetLogBundle:Log:logAlert }
+    
+sopinet_log_emergency:
+    path:     /logs/emergency
+    defaults: { _controller: SopinetLogBundle:Log:logEmergency }
+    
+sopinet_log_logs:
+    path: /logs
+    defaults: {_controller: SopinetLogBundle:Log:logs}

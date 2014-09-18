@@ -18,22 +18,14 @@
 						<tbody>
 							<tr>
 							  <td>MENSAJE</td>
-							  <td>MAS INFO</td>														 
+							  <td>NIVEL</td>														 
 							  <td>FECHA</td>							
 							</tr>
 							{% for message in messages %}
 							<tr>
-								<td>{{  message.message }}</td>
-							  
-							  	<td>
-							  		{% if message.context is not null %}
-							  			<pre>
-							  				{{ dump(message.context) }}
-							  			</pre>	
-							  		{% else %}
-							  			Sin datos
-									{% endif %}
-								</td>
+							  <td>{{  message.message }}</td>
+							  <td>{{ message.context.user }}</td>
+							
 							  
 							  {% if message.datetime is not null %}
 							  <td>{{ message.datetime.date }}</td>
